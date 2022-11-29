@@ -7,7 +7,7 @@ To create a dummy admin dashboard, based mostly off CSS Grid, for The Odin Proje
 **_Skills_Applied_**
 
 1. CSS Grid Mainly
-2. Flexbox
+2. Flexbox (Hardly but was very tempted at times!)
 
 **_Credits_**
 
