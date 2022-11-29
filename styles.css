@@ -1,8 +1,11 @@
+/* *CSS Reset Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* *Grid Container Layout Styles */
 
 .grid_container {
     display: grid;
@@ -13,14 +16,32 @@
 
 .grid_container>* {
     border: 1px solid black;
-    background-color: rgba(54, 118, 247, 0.626)
+    background-color: rgba(116, 160, 249, 0.626)
 }
 
-.header {}
+/* *SideBar Styles */
+
+.sidebar_title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sidebar li {
+    list-style-type: none;
+    padding: 15px;
+}
 
 .sidebar {
     grid-row: 1 / 3;
+
+    display: grid;
+    grid-template-rows: 0.2fr repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
 }
+
+.header {}
 
 .main_content {
     grid-column: 2 / 3;
