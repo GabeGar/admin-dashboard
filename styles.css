@@ -16,7 +16,7 @@
     --white-color: #fff;
     --card-left-border-color: #fbaf20;
     --box-shadow-color: #dcdcdc;
-    --main-content_background-color: #eaeaea;
+    --main-content_background-color: #e2f0fb;
 }
 
 /* *Grid Container Layout Styles */
@@ -171,7 +171,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .main_content {
     grid-column: 2 / 3;
-    box-shadow: inset 0px 3px 0px var(--box-shadow-color);
+    box-shadow: inset 0px 3px 3px var(--box-shadow-color);
     padding: 20px;
 
     display: grid;
@@ -187,7 +187,7 @@ input[type="search"]::-webkit-search-results-decoration {
     border: 1px solid var(--white-color);
     background-color: var(--white-color);
     border-left: 10px solid var(--card-left-border-color);
-    height: 200px;
+    min-height: 210px;
     border-radius: 10px;
     padding: 20px 10px;
 }
@@ -200,8 +200,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .main_right_side {
     display: grid;
-    grid-auto-rows: max-content;
-    gap: 45px;
+    grid-template-columns: 1fr;
 }
 
 .announcements {
@@ -226,4 +225,12 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: var(--white-color);
     border-radius: 10px;
     padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.trending .row {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
 }
