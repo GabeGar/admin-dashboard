@@ -250,6 +250,12 @@ img {
     transform: translate(3px, 3px);
 }
 
+.main_content .card:hover::before {
+    content: url(images/star-check-outline.png) url(images/eye-plus.png) url(images/source-fork.png);
+    position: relative;
+    left: 70%;
+}
+
 .projects_grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
